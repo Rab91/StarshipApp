@@ -3,7 +3,8 @@ import { Button, NumberInput, Tile } from "carbon-components-react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
 import { toast } from 'react-toastify';
-
+import "../styles/card.css"
+import "../styles/NumberInput.css"
 const ProductCard = ({ id, name, model, manufacturer, cost }) => {
   const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
@@ -37,6 +38,7 @@ const ProductCard = ({ id, name, model, manufacturer, cost }) => {
         <NumberInput
           id={`quantity-${id}`} // Ensures each input has a unique ID
           className="custom-number-input"
+          hideSteppers
           min={1}
           value={quantity}
           onChange={(e) => setQuantity(Number(e.target.value))}

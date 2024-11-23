@@ -1,26 +1,6 @@
-/* NumberInput.css */
-.custom-number-input .bx--number {
-    background-color: #f4f4f4; /* Light gray background */
-    border: 2px solid #0f62fe; /* Blue border */
-    border-radius: 8px; /* Rounded corners */
-    color: #393939; /* Dark text */
-  }
-  
-  .custom-number-input .bx--number:hover {
-    border-color: #0043ce; /* Darker blue on hover */
-  }
-  
-  .custom-number-input .bx--number__input {
-    font-size: 1.2rem; /* Larger text size */
-    text-align: center; /* Center align the text */
-  }
-  
-  .custom-number-input .bx--number__control-btn {
-    background-color: #0f62fe; /* Blue buttons */
-    color: white; /* White icon */
-  }
-  
-  .custom-number-input .bx--number__control-btn:hover {
-    background-color: #0043ce; /* Darker blue on hover */
+/* CustomNumberInput.css */
+.bx--number {
+    border: 1px solid #dedede;
+    border-radius: 4px;
   }
   
